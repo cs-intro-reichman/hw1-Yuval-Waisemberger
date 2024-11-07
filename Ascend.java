@@ -14,7 +14,7 @@ public class Ascend {
 		int maxAb = Math.max(a, b);
 		int maxAc = Math.max(a, c);
 		int maxBc = Math.max(b, c);
-
+		// finds the middle value using Math library functions only
 		int middleValue = Math.min((Math.min(maxAb, maxAc)), maxBc);
 
 		System.out.println(minValue + " " + middleValue + " " + maxValue);
