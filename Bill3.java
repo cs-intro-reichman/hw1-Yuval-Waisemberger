@@ -10,7 +10,7 @@ public class Bill3 {
 		// splits the bill to three and rounds it up using Math.ceil function.
 		double roundedBill = Math.ceil((bill / 3));
 
-		System.out.println("Dear " + name1 + ", " + name2 + ", and " + name3 +
+		System.out.println("Dear " + name3 + ", " + name2 + ", and " + name1 +
 							": pay " + roundedBill + " Shekels each");
 							
 	}
