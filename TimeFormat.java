@@ -12,6 +12,28 @@ public class TimeFormat {
 		int hours = Integer.parseInt("" + args[0].charAt(0) + args[0].charAt(1));
 		// Does the same with the minutes part of the input.
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
-        // Replace this comment with the rest of your code
+        
+		// System creates new String variable which will be set to be am or pm.
+		String amOrPm = "PM";
+
+		if (hours > 12) {
+			hours = hours - 12;
+	
+		} else if (hours < 12) {
+					amOrPm = "AM";
+				}
+		
+		else {
+			amOrPm = "PM";
+		}
+
+		// System checks whether the minutes are ones or tens
+		// and prints 0 if needed.
+		if (minutes < 10){
+			System.out.println(hours + ":0" + minutes + " " + amOrPm);
+		}
+		else{
+			System.out.println(hours + ":" + minutes + " " + amOrPm);
+		}
 	}
 }
