@@ -7,10 +7,15 @@ public class Ascend {
 		int a = (int)(range * Math.random());
 		int b = (int)(range * Math.random());
 		int c = (int)(range * Math.random());
-
+		
 		int minValue = Math.min(Math.min(a, b) , c);
 		int maxValue = Math.max(Math.max(a, b) , c);
-		int middleValue = Math.max(Math.min(a, b) , c);
+
+		int maxAb = Math.max(a, b);
+		int maxAc = Math.max(a, c);
+		int maxBc = Math.max(b, c);
+
+		int middleValue = Math.min((Math.min(maxAb, maxAc)), maxBc);
 
 		System.out.println(minValue + " " + middleValue + " " + maxValue);
 	}
